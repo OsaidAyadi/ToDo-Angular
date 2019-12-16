@@ -1,0 +1,5 @@
+<div class="list-todos">
+  <ul *ngFor="let item of receivedToDos">
+    <app-item-todo [receivedListItem]="item" (idToParent)="passId($event)" (changeName)="passName($event)"></app-item-todo>
+  </ul>
+</div>

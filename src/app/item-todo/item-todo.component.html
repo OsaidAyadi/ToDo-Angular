@@ -1,0 +1,9 @@
+<li class="todos-item">
+  <div class="item-details">
+    <input id="{{receivedListItem.id}}" value="{{receivedListItem.name}}" disabled type="text" (keyup.enter)="onKey($event,receivedListItem.id)">
+    <div class="icons">
+      <div class="edit-icon" (click)="editTask(receivedListItem.id)"></div>
+      <div class="delete-icon" (click)="deleteTask(receivedListItem.id)"></div>
+    </div>
+  </div>
+</li>

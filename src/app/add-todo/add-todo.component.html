@@ -1,0 +1,5 @@
+<form (ngSubmit)="addItem()">
+  <input type="text" class="write-todo" placeholder="Add something toDos ..." name="taskName" [(ngModel)]="taskName">
+  <input type="submit" class="add-todo" value="Add This Task to the ToDosList">
+</form>
+<app-list-dodo [receivedToDos]="addToList" (idToBoss)="deleteItem($event)" (nameToBoss)="editItem($event)"></app-list-dodo>
